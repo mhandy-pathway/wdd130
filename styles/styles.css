@@ -2,11 +2,18 @@
     --nav-background-color: darkblue;
     --nav-text-color: white;
     --heading-color: darkblue;
-    --img-border-color: black;
+    --primary-border-color: black;
     --img-shadow-color: gray;
     --footer-border-color: #0003;
-    --py-primary-color: #900;
-    --py-background-color: #dedede;
+    --box-primary-color: #900;
+    --box-background-color: #dedede;
+    --box-text-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -25,11 +32,13 @@ h1 {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
-    border: 1px solid var(--img-border-color);
+    border: 1px solid var(--primary-border-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--img-shadow-color);
+    margin-left: 1em;
 }
 
 p {
@@ -42,11 +51,14 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: solid 3px var(--py-primary-color);
-    padding: 1rem;
-    background-color: var(--py-background-color);
-    color: var(--py-primary-color);
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    color: #fff !important;
 }
 
 aside img {
@@ -59,4 +71,21 @@ footer {
     border-top: solid 2px var(--footer-border-color);
     padding-top: 15px;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: solid 2px var(--box-primary-color);
+    background-color: var(--box-background-color);
+    color: var(--box-text-color);
+    padding: 1rem 2rem;
+}
+
+.box h2 {
+    color: var(--box-primary-color)
+}
+
+.margins {
+    margin: 1em;
 }
