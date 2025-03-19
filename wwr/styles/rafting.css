@@ -87,7 +87,6 @@ body {
 }
 
 .hero article img {
-    display: inline;
     float: right;
     width: 200px;
 }
