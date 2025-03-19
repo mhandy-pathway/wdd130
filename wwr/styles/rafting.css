@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #03045E;
+    --secondary-color: #0077B6;
+    --accent1-color: #90E0EF;
+    --accent2-color: #CAF0F8;
+
+    /* With Transparency */
+    --primary-color-transparent: #03045E99;
+    --secondary-color-transparent: #0077B699;
+    --accent1-color-transparent: #90E0EF99;
+    --accent2-color-transparent: #CAF0F899;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: var(--secondary-color-transparent);
+    color: var(--accent2-color);
+    padding: 10px 0px;
+    border-top: solid 3px var(--primary-color-transparent);
+    border-bottom: solid 3px var(--primary-color-transparent);
+}
+
+header nav a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 0px;
+}
+
+.hero article {
+    position: absolute;
+    top: 100px;
+    padding: 20px 30px;
+    background-color: var(--accent2-color-transparent);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    display: inline;
+    float: right;
+    width: 200px;
+}
