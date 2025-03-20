@@ -140,6 +140,10 @@ body {
     padding: 10px 20px;
 }
 
+.history_content p {
+    flex: 1;
+}
+
 .history_content img {
     width: 250px;
     height: auto;
@@ -162,6 +166,10 @@ body {
 .adventure_content figure {
     width: 140px;
     margin: 0;
+}
+
+.adventure_content figcaption {
+    text-align: center;
 }
 
 .adventure_content img {
