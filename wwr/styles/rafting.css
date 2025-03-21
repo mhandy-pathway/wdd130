@@ -289,9 +289,18 @@ body {
 
 footer {
     display: grid;
-    grid-template-columns: 150px auto 150px;
+    grid-template-columns: 100px auto 100px;
     margin-top: 20px;
     align-items: center;
+}
+
+footer>p>a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+footer>p>a:hover {
+    color: var(--secondary-color);
 }
 
 footer p {
