@@ -268,8 +268,9 @@ body {
 }
 
 .contact_form fieldset div input,
-.contact_form fieldset div span {
+.contact_form fieldset div label {
     padding: 4px 8px;
+    color: black;
 }
 
 .contact_form fieldset button {
