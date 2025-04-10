@@ -42,6 +42,7 @@ h1 {
 
 header {
     display: grid;
+
     grid-template-columns: 250px 1fr;
     align-items: center;
 }
@@ -110,6 +111,14 @@ body {
     background-color: var(--accent2-color-transparent);
 }
 
+.home article h2 {
+    font-size: 2em;
+}
+
+.home article p {
+    font-size: 1.4em;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -119,6 +128,44 @@ body {
 .hero article img {
     float: right;
     width: 200px;
+}
+
+p.center {
+    text-align: center;
+}
+
+.trip_summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.trip_summary h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.trip_summary_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trip_summary figure img {
+    width: 190px;
+    height: auto;
+}
+
+.trip_summary figure figcaption {
+    text-align: center;
+}
+
+.trip_summary a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-radius: 30px;
+}
+
+.trip_summary a:hover {
+    background-color: var(--accent2-color);
 }
 
 .history {
@@ -147,6 +194,65 @@ body {
 .history_content img {
     width: 250px;
     height: auto;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter h2 {
+    text-align: center;
+}
+
+.newsletter_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.newsletter_content>p {
+    margin: 0 20px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.newsletter_content fieldset {
+    display: flex;
+    border: solid 1px var(--secondary-color);
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 20px 20px 20px;
+}
+
+.newsletter_content fieldset p {
+    margin-top: 0;
+    font-size: 0.9em;
+}
+
+.newsletter_content fieldset input,
+.newsletter_content fieldset label {
+    padding: 4px 8px;
+    color: black;
+}
+
+.newsletter_content fieldset button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px auto 0 auto;
+}
+
+.newsletter_content fieldset button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .adventure {
@@ -311,4 +417,15 @@ footer p {
 
 footer nav {
     grid-column: 3/4;
+}
+
+a.primary {
+    color: var(--primary-color);
+    background-color: none;
+    text-decoration: underline;
+}
+
+a.primary:hover {
+    background-color: white;
+    color: black;
 }
