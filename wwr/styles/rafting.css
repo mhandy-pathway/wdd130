@@ -249,7 +249,7 @@ p.center {
 }
 
 .trip_schedule td {
-    padding: 8px 12px;
+    padding: 16px 20px;
     font-size: 1.2em;
     text-align: center;
     color: var(--secondary-color);
@@ -260,7 +260,7 @@ p.center {
     color: var(--primary-color);
 }
 
-.trip_schedule button {
+.trip_schedule a {
     background-color: var(--primary-color);
     border: 0;
     border-radius: 20px;
@@ -270,16 +270,16 @@ p.center {
     cursor: pointer;
 }
 
-.trip_schedule button:hover {
+.trip_schedule a:hover {
     background-color: var(--accent1-color);
     color: var(--primary-color);
 }
 
-.trip_schedule button.red {
+.trip_schedule a.red {
     background-color: #900;
 }
 
-.trip_schedule button.red:hover {
+.trip_schedule a.red:hover {
     background-color: rgb(226, 173, 173);
     color: #900;
 }
